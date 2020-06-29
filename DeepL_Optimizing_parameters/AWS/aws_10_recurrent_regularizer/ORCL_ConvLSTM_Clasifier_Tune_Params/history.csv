@@ -1,0 +1,2 @@
+,Skip,cConv,nLSTM,learning,batch_size,conv_nodes,lstm_nodes,loss_train,acc_train,loss_test,acc_test
+0,1,0,5,0.1,2048,8,128,1.310396298746354,0.18794753675035275,1.1678624142814336,0.025715323718983323

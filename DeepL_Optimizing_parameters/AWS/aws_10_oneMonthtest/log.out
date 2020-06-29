@@ -1,0 +1,770 @@
+Importing and creating CSV DataFrame...
+Creating train/test split of data...
+No pkl file to delete
+                     Lookback4  Lookback3  Lookback2  Lookback1  Lookback0
+Timestamp                                                                 
+2008-02-12 09:35:00   0.664664  -3.985945   1.999099  -1.330687   0.666025
+2008-02-12 09:36:00  -3.985945   1.999099  -1.330687   0.666025   2.662737
+2008-02-12 09:37:00   1.999099  -1.330687   0.666025   2.662737  -1.992973
+2008-02-12 09:38:00  -1.330687   0.666025   2.662737  -1.992973   3.992062
+2008-02-12 09:39:00   0.666025   2.662737  -1.992973   3.992062  -2.653232
+2008-02-12 09:40:00   2.662737  -1.992973   3.992062  -2.653232   1.329327
+2008-02-12 09:41:00  -1.992973   3.992062  -2.653232   1.329327   1.991955
+2008-02-12 09:42:00   3.992062  -2.653232   1.329327   1.991955   4.640789
+2008-02-12 09:43:00  -2.653232   1.329327   1.991955   4.640789   0.000000
+2008-02-12 09:44:00   1.329327   1.991955   4.640789   0.000000   1.321226
+2008-02-12 09:45:00   1.991955   4.640789   0.000000   1.321226   2.639770
+2008-02-12 09:46:00   4.640789   0.000000   1.321226   2.639770  -1.317212
+2008-02-12 09:47:00   0.000000   1.321226   2.639770  -1.317212   0.000000
+2008-02-12 09:48:00   1.321226   2.639770  -1.317212   0.000000   1.977821
+2008-02-12 09:49:00   2.639770  -1.317212   0.000000   1.977821  -1.974818
+2008-02-12 09:50:00  -1.317212   0.000000   1.977821  -1.974818   0.000000
+2008-02-12 09:51:00   0.000000   1.977821  -1.974818   0.000000  -4.614915
+2008-02-12 09:52:00   1.977821  -1.974818   0.000000  -4.614915  -1.323242
+2008-02-12 09:53:00  -1.974818   0.000000  -4.614915  -1.323242  -0.662295
+2008-02-12 09:54:00   0.000000  -4.614915  -1.323242  -0.662295   0.000000
+2008-02-12 09:55:00  -4.614915  -1.323242  -0.662295   0.000000   0.662632
+2008-02-12 09:56:00  -1.323242  -0.662295   0.000000   0.662632  -1.324589
+2008-02-12 09:57:00  -0.662295   0.000000   0.662632  -1.324589   0.662970
+2008-02-12 09:58:00   0.000000   0.662632  -1.324589   0.662970   1.325264
+2008-02-12 09:59:00   0.662632  -1.324589   0.662970   1.325264  -0.661958
+2008-02-12 10:00:00  -1.324589   0.662970   1.325264  -0.661958   2.649179
+2008-02-12 10:01:00   0.662970   1.325264  -0.661958   2.649179   3.965692
+2008-02-12 10:02:00   1.325264  -0.661958   2.649179   3.965692   0.000000
+2008-02-12 10:03:00  -0.661958   2.649179   3.965692   0.000000   1.976819
+2008-02-12 10:04:00   2.649179   3.965692   0.000000   1.976819   4.605578
+...                        ...        ...        ...        ...        ...
+2018-02-14 15:30:00   1.579535   0.000000   0.262936  -1.314417   0.263149
+2018-02-14 15:31:00   0.000000   0.262936  -1.314417   0.263149   0.526192
+2018-02-14 15:32:00   0.262936  -1.314417   0.263149   0.526192   0.262990
+2018-02-14 15:33:00  -1.314417   0.263149   0.526192   0.262990   0.000000
+2018-02-14 15:34:00   0.263149   0.526192   0.262990   0.000000  -0.788809
+2018-02-14 15:35:00   0.526192   0.262990   0.000000  -0.788809  -0.263096
+2018-02-14 15:36:00   0.262990   0.000000  -0.788809  -0.263096   0.263149
+2018-02-14 15:37:00   0.000000  -0.788809  -0.263096   0.263149  -0.263096
+2018-02-14 15:38:00  -0.788809  -0.263096   0.263149  -0.263096   0.526299
+2018-02-14 15:39:00  -0.263096   0.263149  -0.263096   0.526299   0.263043
+2018-02-14 15:40:00   0.263149  -0.263096   0.526299   0.263043   0.788969
+2018-02-14 15:41:00  -0.263096   0.526299   0.263043   0.788969   0.525660
+2018-02-14 15:42:00   0.526299   0.263043   0.788969   0.525660  -1.313620
+2018-02-14 15:43:00   0.263043   0.788969   0.525660  -1.313620  -1.314948
+2018-02-14 15:44:00   0.788969   0.525660  -1.313620  -1.314948   0.526512
+2018-02-14 15:45:00   0.525660  -1.313620  -1.314948   0.526512   1.315746
+2018-02-14 15:46:00  -1.313620  -1.314948   0.526512   1.315746  -1.051533
+2018-02-14 15:47:00  -1.314948   0.526512   1.315746  -1.051533   1.578576
+2018-02-14 15:48:00   0.526512   1.315746  -1.051533   1.578576  -1.051109
+2018-02-14 15:49:00   1.315746  -1.051533   1.578576  -1.051109   0.262990
+2018-02-14 15:50:00  -1.051533   1.578576  -1.051109   0.262990   0.262936
+2018-02-14 15:51:00   1.578576  -1.051109   0.262990   0.262936   0.788650
+2018-02-14 15:52:00  -1.051109   0.262990   0.262936   0.788650  -0.788172
+2018-02-14 15:53:00   0.262990   0.262936   0.788650  -0.788172   0.788650
+2018-02-14 15:54:00   0.262936   0.788650  -0.788172   0.788650  -0.788172
+2018-02-14 15:55:00   0.788650  -0.788172   0.788650  -0.788172  -0.525767
+2018-02-14 15:56:00  -0.788172   0.788650  -0.788172  -0.525767   0.525979
+2018-02-14 15:57:00   0.788650  -0.788172  -0.525767   0.525979   0.000000
+2018-02-14 15:58:00  -0.788172  -0.525767   0.525979   0.000000  -0.262883
+2018-02-14 15:59:00  -0.525767   0.525979   0.000000  -0.262883  -0.262936
+
+[966979 rows x 5 columns]
+[[[ 0.66466368]
+  [-3.98594529]
+  [ 1.99909858]
+  [-1.33068728]
+  [ 0.66602499]]
+
+ [[-3.98594529]
+  [ 1.99909858]
+  [-1.33068728]
+  [ 0.66602499]
+  [ 2.66273657]]
+
+ [[ 1.99909858]
+  [-1.33068728]
+  [ 0.66602499]
+  [ 2.66273657]
+  [-1.99297264]]
+
+ ...
+
+ [[ 0.78865005]
+  [-0.78817217]
+  [-0.5257667 ]
+  [ 0.5259793 ]
+  [ 0.        ]]
+
+ [[-0.78817217]
+  [-0.5257667 ]
+  [ 0.5259793 ]
+  [ 0.        ]
+  [-0.26288335]]
+
+ [[-0.5257667 ]
+  [ 0.5259793 ]
+  [ 0.        ]
+  [-0.26288335]
+  [-0.26293649]]]
+may:  74664    menor:  75192   neutro:  817123
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm_1 (LSTM)                (None, 5, 128)            66560     
+_________________________________________________________________
+lstm_2 (LSTM)                (None, 5, 128)            131584    
+_________________________________________________________________
+lstm_3 (LSTM)                (None, 5, 128)            131584    
+_________________________________________________________________
+lstm_4 (LSTM)                (None, 5, 128)            131584    
+_________________________________________________________________
+lstm_5 (LSTM)                (None, 128)               131584    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 3)                 387       
+=================================================================
+Total params: 593,283
+Trainable params: 593,283
+Non-trainable params: 0
+_________________________________________________________________
+None
+Epoch 1/800
+ - 56s - loss: 2.5746 - class_1_accuracy: 0.1633
+Epoch 2/800
+ - 52s - loss: 2.5398 - class_1_accuracy: 0.1607
+Epoch 3/800
+ - 52s - loss: 2.5375 - class_1_accuracy: 0.1594
+Epoch 4/800
+ - 52s - loss: 2.5366 - class_1_accuracy: 0.1602
+Epoch 5/800
+ - 52s - loss: 2.5363 - class_1_accuracy: 0.1583
+Epoch 6/800
+ - 52s - loss: 2.5362 - class_1_accuracy: 0.1590
+Epoch 7/800
+ - 52s - loss: 2.5357 - class_1_accuracy: 0.1594
+Epoch 8/800
+ - 52s - loss: 2.5353 - class_1_accuracy: 0.1594
+Epoch 9/800
+ - 52s - loss: 2.5355 - class_1_accuracy: 0.1599
+Epoch 10/800
+ - 52s - loss: 2.5350 - class_1_accuracy: 0.1605
+Yoe: epoch, Probabilidad tot:  10 0.12779850746268656
+Yoe: epoch, Cantidad total pred:  10 2144
+Epoch 11/800
+ - 52s - loss: 2.5354 - class_1_accuracy: 0.1604
+Epoch 12/800
+ - 52s - loss: 2.5349 - class_1_accuracy: 0.1613
+Epoch 13/800
+ - 52s - loss: 2.5345 - class_1_accuracy: 0.1599
+Epoch 14/800
+ - 52s - loss: 2.5342 - class_1_accuracy: 0.1604
+Epoch 15/800
+ - 52s - loss: 2.5338 - class_1_accuracy: 0.1612
+Epoch 16/800
+ - 52s - loss: 2.5343 - class_1_accuracy: 0.1607
+Epoch 17/800
+ - 52s - loss: 2.5330 - class_1_accuracy: 0.1633
+Epoch 18/800
+ - 52s - loss: 2.5276 - class_1_accuracy: 0.1611
+Epoch 19/800
+ - 52s - loss: 2.5208 - class_1_accuracy: 0.1616
+Epoch 20/800
+ - 52s - loss: 2.5165 - class_1_accuracy: 0.1604
+Yoe: epoch, Probabilidad tot:  20 0.1261487050960735
+Yoe: epoch, Cantidad total pred:  20 2394
+Epoch 21/800
+ - 52s - loss: 2.5137 - class_1_accuracy: 0.1596
+Epoch 22/800
+ - 52s - loss: 2.5109 - class_1_accuracy: 0.1593
+Epoch 23/800
+ - 52s - loss: 2.5092 - class_1_accuracy: 0.1599
+Epoch 24/800
+ - 52s - loss: 2.5075 - class_1_accuracy: 0.1592
+Epoch 25/800
+ - 52s - loss: 2.5065 - class_1_accuracy: 0.1596
+Epoch 26/800
+ - 52s - loss: 2.5049 - class_1_accuracy: 0.1603
+Epoch 27/800
+ - 52s - loss: 2.5038 - class_1_accuracy: 0.1612
+Epoch 28/800
+ - 52s - loss: 2.5030 - class_1_accuracy: 0.1601
+Epoch 29/800
+ - 52s - loss: 2.5017 - class_1_accuracy: 0.1617
+Epoch 30/800
+ - 52s - loss: 2.4999 - class_1_accuracy: 0.1609
+Yoe: epoch, Probabilidad tot:  30 0.13171225937183384
+Yoe: epoch, Cantidad total pred:  30 1974
+Epoch 31/800
+ - 52s - loss: 2.4987 - class_1_accuracy: 0.1617
+Epoch 32/800
+ - 52s - loss: 2.4969 - class_1_accuracy: 0.1622
+Epoch 33/800
+ - 52s - loss: 2.4956 - class_1_accuracy: 0.1629
+Epoch 34/800
+ - 52s - loss: 2.4931 - class_1_accuracy: 0.1630
+Epoch 35/800
+ - 52s - loss: 2.4914 - class_1_accuracy: 0.1641
+Epoch 36/800
+ - 52s - loss: 2.4886 - class_1_accuracy: 0.1641
+Epoch 37/800
+ - 52s - loss: 2.4869 - class_1_accuracy: 0.1648
+Epoch 38/800
+ - 52s - loss: 2.4839 - class_1_accuracy: 0.1656
+Epoch 39/800
+ - 52s - loss: 2.4826 - class_1_accuracy: 0.1672
+Epoch 40/800
+ - 52s - loss: 2.4788 - class_1_accuracy: 0.1669
+Yoe: epoch, Probabilidad tot:  40 0.13096446700507614
+Yoe: epoch, Cantidad total pred:  40 1970
+Epoch 41/800
+ - 52s - loss: 2.4753 - class_1_accuracy: 0.1684
+Epoch 42/800
+ - 52s - loss: 2.4733 - class_1_accuracy: 0.1701
+Epoch 43/800
+ - 52s - loss: 2.4700 - class_1_accuracy: 0.1701
+Epoch 44/800
+ - 52s - loss: 2.4656 - class_1_accuracy: 0.1715
+Epoch 45/800
+ - 52s - loss: 2.4613 - class_1_accuracy: 0.1722
+Epoch 46/800
+ - 52s - loss: 2.4576 - class_1_accuracy: 0.1734
+Epoch 47/800
+ - 52s - loss: 2.4525 - class_1_accuracy: 0.1745
+Epoch 48/800
+ - 52s - loss: 2.4475 - class_1_accuracy: 0.1747
+Epoch 49/800
+ - 52s - loss: 2.4425 - class_1_accuracy: 0.1778
+Epoch 50/800
+ - 52s - loss: 2.4367 - class_1_accuracy: 0.1773
+Yoe: epoch, Probabilidad tot:  50 0.12358946802794196
+Yoe: epoch, Cantidad total pred:  50 1861
+Epoch 51/800
+ - 52s - loss: 2.4299 - class_1_accuracy: 0.1788
+Epoch 52/800
+ - 52s - loss: 2.4242 - class_1_accuracy: 0.1802
+Epoch 53/800
+ - 52s - loss: 2.4157 - class_1_accuracy: 0.1818
+Epoch 54/800
+ - 52s - loss: 2.4091 - class_1_accuracy: 0.1833
+Epoch 55/800
+ - 52s - loss: 2.4013 - class_1_accuracy: 0.1843
+Epoch 56/800
+ - 52s - loss: 2.3921 - class_1_accuracy: 0.1851
+Epoch 57/800
+ - 52s - loss: 2.3848 - class_1_accuracy: 0.1856
+Epoch 58/800
+ - 52s - loss: 2.3750 - class_1_accuracy: 0.1883
+Epoch 59/800
+ - 52s - loss: 2.3636 - class_1_accuracy: 0.1901
+Epoch 60/800
+ - 52s - loss: 2.3535 - class_1_accuracy: 0.1909
+Yoe: epoch, Probabilidad tot:  60 0.11597051597051597
+Yoe: epoch, Cantidad total pred:  60 2035
+Epoch 61/800
+ - 52s - loss: 2.3435 - class_1_accuracy: 0.1931
+Epoch 62/800
+ - 52s - loss: 2.3318 - class_1_accuracy: 0.1941
+Epoch 63/800
+ - 52s - loss: 2.3196 - class_1_accuracy: 0.1954
+Epoch 64/800
+ - 52s - loss: 2.3084 - class_1_accuracy: 0.1970
+Epoch 65/800
+ - 52s - loss: 2.2936 - class_1_accuracy: 0.1978
+Epoch 66/800
+ - 52s - loss: 2.2823 - class_1_accuracy: 0.1990
+Epoch 67/800
+ - 52s - loss: 2.2700 - class_1_accuracy: 0.2022
+Epoch 68/800
+ - 52s - loss: 2.2554 - class_1_accuracy: 0.2032
+Epoch 69/800
+ - 52s - loss: 2.2456 - class_1_accuracy: 0.2040
+Epoch 70/800
+ - 52s - loss: 2.2275 - class_1_accuracy: 0.2066
+Yoe: epoch, Probabilidad tot:  70 0.11170212765957446
+Yoe: epoch, Cantidad total pred:  70 2068
+Epoch 71/800
+ - 52s - loss: 2.2127 - class_1_accuracy: 0.2082
+Epoch 72/800
+ - 52s - loss: 2.1994 - class_1_accuracy: 0.2097
+Epoch 73/800
+ - 52s - loss: 2.1846 - class_1_accuracy: 0.2117
+Epoch 74/800
+ - 52s - loss: 2.1725 - class_1_accuracy: 0.2137
+Epoch 75/800
+ - 52s - loss: 2.1581 - class_1_accuracy: 0.2160
+Epoch 76/800
+ - 52s - loss: 2.1416 - class_1_accuracy: 0.2163
+Epoch 77/800
+ - 52s - loss: 2.1284 - class_1_accuracy: 0.2190
+Epoch 78/800
+ - 52s - loss: 2.1213 - class_1_accuracy: 0.2188
+Epoch 79/800
+ - 52s - loss: 2.0968 - class_1_accuracy: 0.2216
+Epoch 80/800
+ - 52s - loss: 2.0872 - class_1_accuracy: 0.2228
+Yoe: epoch, Probabilidad tot:  80 0.1034965034965035
+Yoe: epoch, Cantidad total pred:  80 2145
+Epoch 81/800
+ - 52s - loss: 2.0703 - class_1_accuracy: 0.2248
+Epoch 82/800
+ - 52s - loss: 2.0512 - class_1_accuracy: 0.2273
+Epoch 83/800
+ - 52s - loss: 2.0447 - class_1_accuracy: 0.2272
+Epoch 84/800
+ - 52s - loss: 2.0313 - class_1_accuracy: 0.2281
+Epoch 85/800
+ - 52s - loss: 2.0172 - class_1_accuracy: 0.2300
+Epoch 86/800
+ - 52s - loss: 2.0060 - class_1_accuracy: 0.2317
+Epoch 87/800
+ - 52s - loss: 1.9919 - class_1_accuracy: 0.2321
+Epoch 88/800
+ - 52s - loss: 1.9707 - class_1_accuracy: 0.2351
+Epoch 89/800
+ - 52s - loss: 1.9649 - class_1_accuracy: 0.2357
+Epoch 90/800
+ - 52s - loss: 1.9586 - class_1_accuracy: 0.2367
+Yoe: epoch, Probabilidad tot:  90 0.1077140169332079
+Yoe: epoch, Cantidad total pred:  90 2126
+Epoch 91/800
+ - 52s - loss: 1.9450 - class_1_accuracy: 0.2376
+Epoch 92/800
+ - 52s - loss: 1.9335 - class_1_accuracy: 0.2388
+Epoch 93/800
+ - 52s - loss: 1.9211 - class_1_accuracy: 0.2397
+Epoch 94/800
+ - 52s - loss: 1.9033 - class_1_accuracy: 0.2403
+Epoch 95/800
+ - 52s - loss: 1.8922 - class_1_accuracy: 0.2440
+Epoch 96/800
+ - 52s - loss: 1.8885 - class_1_accuracy: 0.2431
+Epoch 97/800
+ - 52s - loss: 1.8738 - class_1_accuracy: 0.2448
+Epoch 98/800
+ - 52s - loss: 1.8625 - class_1_accuracy: 0.2447
+Epoch 99/800
+ - 52s - loss: 1.8571 - class_1_accuracy: 0.2457
+Epoch 100/800
+ - 52s - loss: 1.8481 - class_1_accuracy: 0.2464
+Yoe: epoch, Probabilidad tot:  100 0.10709046454767726
+Yoe: epoch, Cantidad total pred:  100 2045
+Epoch 101/800
+ - 52s - loss: 1.8410 - class_1_accuracy: 0.2465
+Epoch 102/800
+ - 52s - loss: 1.8286 - class_1_accuracy: 0.2486
+Epoch 103/800
+ - 52s - loss: 1.8136 - class_1_accuracy: 0.2510
+Epoch 104/800
+ - 52s - loss: 1.8075 - class_1_accuracy: 0.2510
+Epoch 105/800
+ - 52s - loss: 1.7957 - class_1_accuracy: 0.2508
+Epoch 106/800
+ - 52s - loss: 1.7983 - class_1_accuracy: 0.2516
+Epoch 107/800
+ - 52s - loss: 1.7847 - class_1_accuracy: 0.2520
+Epoch 108/800
+ - 52s - loss: 1.7721 - class_1_accuracy: 0.2545
+Epoch 109/800
+ - 52s - loss: 1.7678 - class_1_accuracy: 0.2541
+Epoch 110/800
+ - 52s - loss: 1.7671 - class_1_accuracy: 0.2545
+Yoe: epoch, Probabilidad tot:  110 0.10531496062992125
+Yoe: epoch, Cantidad total pred:  110 2032
+Epoch 111/800
+ - 52s - loss: 1.7431 - class_1_accuracy: 0.2563
+Epoch 112/800
+ - 52s - loss: 1.7421 - class_1_accuracy: 0.2570
+Epoch 113/800
+ - 52s - loss: 1.7358 - class_1_accuracy: 0.2571
+Epoch 114/800
+ - 52s - loss: 1.7332 - class_1_accuracy: 0.2578
+Epoch 115/800
+ - 52s - loss: 1.7185 - class_1_accuracy: 0.2592
+Epoch 116/800
+ - 52s - loss: 1.7304 - class_1_accuracy: 0.2576
+Epoch 117/800
+ - 52s - loss: 1.7088 - class_1_accuracy: 0.2608
+Epoch 118/800
+ - 52s - loss: 1.6932 - class_1_accuracy: 0.2624
+Epoch 119/800
+ - 52s - loss: 1.7024 - class_1_accuracy: 0.2611
+Epoch 120/800
+ - 52s - loss: 1.6844 - class_1_accuracy: 0.2626
+Yoe: epoch, Probabilidad tot:  120 0.10504844467108618
+Yoe: epoch, Cantidad total pred:  120 1961
+Epoch 121/800
+ - 52s - loss: 1.6807 - class_1_accuracy: 0.2627
+Epoch 122/800
+ - 52s - loss: 1.6783 - class_1_accuracy: 0.2633
+Epoch 123/800
+ - 52s - loss: 1.6719 - class_1_accuracy: 0.2645
+Epoch 124/800
+ - 52s - loss: 1.6665 - class_1_accuracy: 0.2649
+Epoch 125/800
+ - 52s - loss: 1.6583 - class_1_accuracy: 0.2654
+Epoch 126/800
+ - 52s - loss: 1.6554 - class_1_accuracy: 0.2665
+Epoch 127/800
+ - 52s - loss: 1.6437 - class_1_accuracy: 0.2681
+Epoch 128/800
+ - 52s - loss: 1.6523 - class_1_accuracy: 0.2664
+Epoch 129/800
+ - 52s - loss: 1.6420 - class_1_accuracy: 0.2679
+Epoch 130/800
+ - 52s - loss: 1.6337 - class_1_accuracy: 0.2681
+Yoe: epoch, Probabilidad tot:  130 0.10721649484536082
+Yoe: epoch, Cantidad total pred:  130 1940
+Epoch 131/800
+ - 52s - loss: 1.6253 - class_1_accuracy: 0.2702
+Epoch 132/800
+ - 52s - loss: 1.6149 - class_1_accuracy: 0.2715
+Epoch 133/800
+ - 52s - loss: 1.6181 - class_1_accuracy: 0.2709
+Epoch 134/800
+ - 52s - loss: 1.6319 - class_1_accuracy: 0.2674
+Epoch 135/800
+ - 52s - loss: 1.5952 - class_1_accuracy: 0.2730
+Epoch 136/800
+ - 52s - loss: 1.5964 - class_1_accuracy: 0.2730
+Epoch 137/800
+ - 52s - loss: 1.5984 - class_1_accuracy: 0.2739
+Epoch 138/800
+ - 52s - loss: 1.5970 - class_1_accuracy: 0.2736
+Epoch 139/800
+ - 52s - loss: 1.5958 - class_1_accuracy: 0.2734
+Epoch 140/800
+ - 52s - loss: 1.5823 - class_1_accuracy: 0.2751
+Yoe: epoch, Probabilidad tot:  140 0.1063034188034188
+Yoe: epoch, Cantidad total pred:  140 1872
+Epoch 141/800
+ - 52s - loss: 1.5770 - class_1_accuracy: 0.2750
+Epoch 142/800
+ - 52s - loss: 1.5828 - class_1_accuracy: 0.2748
+Epoch 143/800
+ - 52s - loss: 1.5766 - class_1_accuracy: 0.2760
+Epoch 144/800
+ - 52s - loss: 1.5641 - class_1_accuracy: 0.2775
+Epoch 145/800
+ - 52s - loss: 1.5590 - class_1_accuracy: 0.2770
+Epoch 146/800
+ - 52s - loss: 1.5588 - class_1_accuracy: 0.2784
+Epoch 147/800
+ - 52s - loss: 1.5487 - class_1_accuracy: 0.2785
+Epoch 148/800
+ - 52s - loss: 1.5475 - class_1_accuracy: 0.2796
+Epoch 149/800
+ - 52s - loss: 1.5531 - class_1_accuracy: 0.2775
+Epoch 150/800
+ - 52s - loss: 1.5538 - class_1_accuracy: 0.2780
+Yoe: epoch, Probabilidad tot:  150 0.09451385116784357
+Yoe: epoch, Cantidad total pred:  150 1841
+Epoch 151/800
+ - 52s - loss: 1.5373 - class_1_accuracy: 0.2806
+Epoch 152/800
+ - 52s - loss: 1.5248 - class_1_accuracy: 0.2825
+Epoch 153/800
+ - 52s - loss: 1.5299 - class_1_accuracy: 0.2823
+Epoch 154/800
+ - 52s - loss: 1.5324 - class_1_accuracy: 0.2821
+Epoch 155/800
+ - 52s - loss: 1.5294 - class_1_accuracy: 0.2807
+Epoch 156/800
+ - 52s - loss: 1.5271 - class_1_accuracy: 0.2825
+Epoch 157/800
+ - 52s - loss: 1.5203 - class_1_accuracy: 0.2831
+Epoch 158/800
+ - 52s - loss: 1.5075 - class_1_accuracy: 0.2849
+Epoch 159/800
+ - 52s - loss: 1.5085 - class_1_accuracy: 0.2842
+Epoch 160/800
+ - 52s - loss: 1.5012 - class_1_accuracy: 0.2849
+Yoe: epoch, Probabilidad tot:  160 0.10352187833511206
+Yoe: epoch, Cantidad total pred:  160 1874
+Epoch 161/800
+ - 52s - loss: 1.5088 - class_1_accuracy: 0.2846
+Epoch 162/800
+ - 52s - loss: 1.5142 - class_1_accuracy: 0.2829
+Epoch 163/800
+ - 52s - loss: 1.5067 - class_1_accuracy: 0.2847
+Epoch 164/800
+ - 52s - loss: 1.4961 - class_1_accuracy: 0.2851
+Epoch 165/800
+ - 52s - loss: 1.4954 - class_1_accuracy: 0.2863
+Epoch 166/800
+ - 52s - loss: 1.4935 - class_1_accuracy: 0.2879
+Epoch 167/800
+ - 52s - loss: 1.4838 - class_1_accuracy: 0.2867
+Epoch 168/800
+ - 52s - loss: 1.4900 - class_1_accuracy: 0.2875
+Epoch 169/800
+ - 52s - loss: 1.4583 - class_1_accuracy: 0.2923
+Epoch 170/800
+ - 52s - loss: 1.4885 - class_1_accuracy: 0.2891
+Yoe: epoch, Probabilidad tot:  170 0.10099337748344371
+Yoe: epoch, Cantidad total pred:  170 1812
+Epoch 171/800
+ - 52s - loss: 1.4825 - class_1_accuracy: 0.2879
+Epoch 172/800
+ - 52s - loss: 1.4711 - class_1_accuracy: 0.2899
+Epoch 173/800
+ - 52s - loss: 1.4702 - class_1_accuracy: 0.2893
+Epoch 174/800
+ - 52s - loss: 1.4656 - class_1_accuracy: 0.2913
+Epoch 175/800
+ - 52s - loss: 1.4642 - class_1_accuracy: 0.2917
+Epoch 176/800
+ - 52s - loss: 1.4660 - class_1_accuracy: 0.2911
+Epoch 177/800
+ - 52s - loss: 1.4590 - class_1_accuracy: 0.2918
+Epoch 178/800
+ - 52s - loss: 1.4527 - class_1_accuracy: 0.2929
+Epoch 179/800
+ - 52s - loss: 1.4548 - class_1_accuracy: 0.2929
+Epoch 180/800
+ - 52s - loss: 1.4489 - class_1_accuracy: 0.2931
+Yoe: epoch, Probabilidad tot:  180 0.09926677946982515
+Yoe: epoch, Cantidad total pred:  180 1773
+Epoch 181/800
+ - 52s - loss: 1.4497 - class_1_accuracy: 0.2934
+Epoch 182/800
+ - 52s - loss: 1.4340 - class_1_accuracy: 0.2951
+Epoch 183/800
+ - 52s - loss: 1.4460 - class_1_accuracy: 0.2946
+Epoch 184/800
+ - 52s - loss: 1.4390 - class_1_accuracy: 0.2957
+Epoch 185/800
+ - 52s - loss: 1.4406 - class_1_accuracy: 0.2953
+Epoch 186/800
+ - 52s - loss: 1.4368 - class_1_accuracy: 0.2957
+Epoch 187/800
+ - 52s - loss: 1.4282 - class_1_accuracy: 0.2965
+Epoch 188/800
+ - 52s - loss: 1.4259 - class_1_accuracy: 0.2969
+Epoch 189/800
+ - 52s - loss: 1.4238 - class_1_accuracy: 0.2986
+Epoch 190/800
+ - 52s - loss: 1.4248 - class_1_accuracy: 0.2984
+Yoe: epoch, Probabilidad tot:  190 0.10430839002267574
+Yoe: epoch, Cantidad total pred:  190 1764
+Epoch 191/800
+ - 52s - loss: 1.4324 - class_1_accuracy: 0.2934
+Epoch 192/800
+ - 52s - loss: 1.4141 - class_1_accuracy: 0.2979
+Epoch 193/800
+ - 52s - loss: 1.4161 - class_1_accuracy: 0.2977
+Epoch 194/800
+ - 52s - loss: 1.4146 - class_1_accuracy: 0.2974
+Epoch 195/800
+ - 52s - loss: 1.4115 - class_1_accuracy: 0.2995
+Epoch 196/800
+ - 52s - loss: 1.4087 - class_1_accuracy: 0.3004
+Epoch 197/800
+ - 52s - loss: 1.4063 - class_1_accuracy: 0.3010
+Epoch 198/800
+ - 52s - loss: 1.4058 - class_1_accuracy: 0.2996
+Epoch 199/800
+ - 52s - loss: 1.4117 - class_1_accuracy: 0.2993
+Epoch 200/800
+ - 52s - loss: 1.3956 - class_1_accuracy: 0.3010
+Yoe: epoch, Probabilidad tot:  200 0.10069044879171461
+Yoe: epoch, Cantidad total pred:  200 1738
+Epoch 201/800
+ - 52s - loss: 1.3938 - class_1_accuracy: 0.3017
+Epoch 202/800
+ - 52s - loss: 1.3930 - class_1_accuracy: 0.3017
+Epoch 203/800
+ - 52s - loss: 1.4003 - class_1_accuracy: 0.2999
+Epoch 204/800
+ - 52s - loss: 1.3812 - class_1_accuracy: 0.3041
+Epoch 205/800
+ - 52s - loss: 1.3919 - class_1_accuracy: 0.3031
+Epoch 206/800
+ - 52s - loss: 1.4014 - class_1_accuracy: 0.3004
+Epoch 207/800
+ - 52s - loss: 1.3922 - class_1_accuracy: 0.3030
+Epoch 208/800
+ - 52s - loss: 1.3716 - class_1_accuracy: 0.3065
+Epoch 209/800
+ - 52s - loss: 1.3739 - class_1_accuracy: 0.3051
+Epoch 210/800
+ - 52s - loss: 1.3787 - class_1_accuracy: 0.3048
+Yoe: epoch, Probabilidad tot:  210 0.10260770975056689
+Yoe: epoch, Cantidad total pred:  210 1764
+Epoch 211/800
+ - 52s - loss: 1.3798 - class_1_accuracy: 0.3039
+Epoch 212/800
+ - 52s - loss: 1.4222 - class_1_accuracy: 0.2993
+Epoch 213/800
+ - 52s - loss: 1.3744 - class_1_accuracy: 0.3050
+Epoch 214/800
+ - 52s - loss: 1.3628 - class_1_accuracy: 0.3070
+Epoch 215/800
+ - 52s - loss: 1.3736 - class_1_accuracy: 0.3057
+Epoch 216/800
+ - 52s - loss: 1.3598 - class_1_accuracy: 0.3057
+Epoch 217/800
+ - 52s - loss: 1.3748 - class_1_accuracy: 0.3059
+Epoch 218/800
+ - 52s - loss: 1.3624 - class_1_accuracy: 0.3061
+Epoch 219/800
+ - 52s - loss: 1.3564 - class_1_accuracy: 0.3088
+Epoch 220/800
+ - 52s - loss: 1.3586 - class_1_accuracy: 0.3067
+Yoe: epoch, Probabilidad tot:  220 0.10247349823321555
+Yoe: epoch, Cantidad total pred:  220 1698
+Epoch 221/800
+ - 52s - loss: 1.3533 - class_1_accuracy: 0.3077
+Epoch 222/800
+ - 52s - loss: 1.3619 - class_1_accuracy: 0.3074
+Epoch 223/800
+ - 52s - loss: 1.3607 - class_1_accuracy: 0.3073
+Epoch 224/800
+ - 52s - loss: 1.3421 - class_1_accuracy: 0.3103
+Epoch 225/800
+ - 52s - loss: 1.3534 - class_1_accuracy: 0.3085
+Epoch 226/800
+ - 52s - loss: 1.3521 - class_1_accuracy: 0.3100
+Epoch 227/800
+ - 52s - loss: 1.3551 - class_1_accuracy: 0.3085
+Epoch 228/800
+ - 52s - loss: 1.3348 - class_1_accuracy: 0.3121
+Epoch 229/800
+ - 52s - loss: 1.3482 - class_1_accuracy: 0.3089
+Epoch 230/800
+ - 52s - loss: 1.3569 - class_1_accuracy: 0.3086
+Yoe: epoch, Probabilidad tot:  230 0.10577507598784194
+Yoe: epoch, Cantidad total pred:  230 1645
+Epoch 231/800
+ - 52s - loss: 1.3328 - class_1_accuracy: 0.3123
+Epoch 232/800
+ - 52s - loss: 1.3321 - class_1_accuracy: 0.3114
+Epoch 233/800
+ - 52s - loss: 1.3306 - class_1_accuracy: 0.3131
+Epoch 234/800
+ - 52s - loss: 1.3441 - class_1_accuracy: 0.3100
+Epoch 235/800
+ - 52s - loss: 1.3406 - class_1_accuracy: 0.3112
+Epoch 236/800
+ - 52s - loss: 1.3336 - class_1_accuracy: 0.3119
+Epoch 237/800
+ - 52s - loss: 1.3208 - class_1_accuracy: 0.3151
+Epoch 238/800
+ - 52s - loss: 1.3335 - class_1_accuracy: 0.3115
+Epoch 239/800
+ - 52s - loss: 1.3334 - class_1_accuracy: 0.3129
+Epoch 240/800
+ - 52s - loss: 1.3241 - class_1_accuracy: 0.3153
+Yoe: epoch, Probabilidad tot:  240 0.10253317249698432
+Yoe: epoch, Cantidad total pred:  240 1658
+Epoch 241/800
+ - 52s - loss: 1.3184 - class_1_accuracy: 0.3157
+Epoch 242/800
+ - 52s - loss: 1.3250 - class_1_accuracy: 0.3141
+Epoch 243/800
+ - 52s - loss: 1.3163 - class_1_accuracy: 0.3162
+Epoch 244/800
+ - 52s - loss: 1.3162 - class_1_accuracy: 0.3148
+Epoch 245/800
+ - 52s - loss: 1.3217 - class_1_accuracy: 0.3131
+Epoch 246/800
+ - 52s - loss: 1.3197 - class_1_accuracy: 0.3156
+Epoch 247/800
+ - 52s - loss: 1.3055 - class_1_accuracy: 0.3165
+Epoch 248/800
+ - 52s - loss: 1.3411 - class_1_accuracy: 0.3116
+Epoch 249/800
+ - 52s - loss: 1.3115 - class_1_accuracy: 0.3168
+Epoch 250/800
+ - 52s - loss: 1.3012 - class_1_accuracy: 0.3187
+Yoe: epoch, Probabilidad tot:  250 0.1023142509135201
+Yoe: epoch, Cantidad total pred:  250 1642
+Epoch 251/800
+ - 52s - loss: 1.3149 - class_1_accuracy: 0.3150
+Epoch 252/800
+ - 52s - loss: 1.3016 - class_1_accuracy: 0.3175
+Epoch 253/800
+ - 52s - loss: 1.3085 - class_1_accuracy: 0.3172
+Epoch 254/800
+ - 52s - loss: 1.2992 - class_1_accuracy: 0.3181
+Epoch 255/800
+ - 52s - loss: 1.3045 - class_1_accuracy: 0.3164
+Epoch 256/800
+ - 52s - loss: 1.3045 - class_1_accuracy: 0.3175
+Epoch 257/800
+ - 52s - loss: 1.3143 - class_1_accuracy: 0.3150
+Epoch 258/800
+ - 52s - loss: 1.2801 - class_1_accuracy: 0.3244
+Epoch 259/800
+ - 52s - loss: 1.3073 - class_1_accuracy: 0.3166
+Epoch 260/800
+ - 52s - loss: 1.3102 - class_1_accuracy: 0.3159
+Yoe: epoch, Probabilidad tot:  260 0.11166562694946974
+Yoe: epoch, Cantidad total pred:  260 1603
+Epoch 261/800
+ - 52s - loss: 1.2842 - class_1_accuracy: 0.3195
+Epoch 262/800
+ - 52s - loss: 1.2873 - class_1_accuracy: 0.3208
+Epoch 263/800
+ - 52s - loss: 1.2969 - class_1_accuracy: 0.3186
+Epoch 264/800
+ - 52s - loss: 1.2996 - class_1_accuracy: 0.3181
+Epoch 265/800
+ - 52s - loss: 1.3025 - class_1_accuracy: 0.3178
+Epoch 266/800
+ - 52s - loss: 1.2979 - class_1_accuracy: 0.3185
+Epoch 267/800
+ - 52s - loss: 1.2879 - class_1_accuracy: 0.3214
+Epoch 268/800
+ - 52s - loss: 1.2888 - class_1_accuracy: 0.3212
+Epoch 269/800
+ - 52s - loss: 1.2684 - class_1_accuracy: 0.3234
+Epoch 270/800
+ - 52s - loss: 1.2952 - class_1_accuracy: 0.3188
+Yoe: epoch, Probabilidad tot:  270 0.10340632603406326
+Yoe: epoch, Cantidad total pred:  270 1644
+Epoch 271/800
+ - 52s - loss: 1.2963 - class_1_accuracy: 0.3182
+Epoch 272/800
+ - 52s - loss: 1.2701 - class_1_accuracy: 0.3246
+Epoch 273/800
+ - 52s - loss: 1.2776 - class_1_accuracy: 0.3220
+Epoch 274/800
+ - 52s - loss: 1.2713 - class_1_accuracy: 0.3249
+Epoch 275/800
+ - 52s - loss: 1.2802 - class_1_accuracy: 0.3216
+Epoch 276/800
+ - 52s - loss: 1.2716 - class_1_accuracy: 0.3234
+Epoch 277/800
+ - 52s - loss: 1.2645 - class_1_accuracy: 0.3248
+Epoch 278/800
+ - 52s - loss: 1.2701 - class_1_accuracy: 0.3242
+Epoch 279/800
+ - 52s - loss: 1.2939 - class_1_accuracy: 0.3188
+Epoch 280/800
+ - 52s - loss: 1.2680 - class_1_accuracy: 0.3242
+Yoe: epoch, Probabilidad tot:  280 0.10099132589838909
+Yoe: epoch, Cantidad total pred:  280 1614
+Epoch 281/800
+ - 52s - loss: 1.2747 - class_1_accuracy: 0.3229
+Epoch 282/800
+ - 52s - loss: 1.2638 - class_1_accuracy: 0.3268
+Epoch 283/800
+ - 52s - loss: 1.2576 - class_1_accuracy: 0.3275
+Epoch 284/800
+ - 52s - loss: 1.2745 - class_1_accuracy: 0.3235
+Epoch 285/800
+ - 52s - loss: 1.2658 - class_1_accuracy: 0.3248
+Epoch 286/800
+ - 52s - loss: 1.2695 - class_1_accuracy: 0.3239
+Epoch 287/800
+ - 52s - loss: 1.2612 - class_1_accuracy: 0.3257
+Epoch 288/800
+ - 52s - loss: 1.2526 - class_1_accuracy: 0.3264
+Epoch 289/800
+ - 52s - loss: 1.2708 - class_1_accuracy: 0.3246
+Epoch 290/800
+ - 52s - loss: 1.2693 - class_1_accuracy: 0.3237
+Yoe: epoch, Probabilidad tot:  290 0.10612760581174985
+Yoe: epoch, Cantidad total pred:  290 1583
+Epoch 291/800
+ - 52s - loss: 1.2589 - class_1_accuracy: 0.3253
+Epoch 292/800
+ - 52s - loss: 1.2534 - class_1_accuracy: 0.3274
